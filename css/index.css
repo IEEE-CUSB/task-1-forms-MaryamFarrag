@@ -1,7 +1,6 @@
 section#form{
-  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../images/bg.jpg");
+  background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.4)),url("../images/bg.jpg");
   background-size: 100% 100%;
-  background-color: #002546;
   color:rgb(238, 238, 238);
 }
 section#form hr{
