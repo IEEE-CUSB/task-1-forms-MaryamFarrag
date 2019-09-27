@@ -1,0 +1,40 @@
+section#form{
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../images/bg.jpg");
+  background-size: 100% 100%;
+  background-color: #002546;
+  color:rgb(238, 238, 238);
+}
+section#form hr{
+  background-color:rgb(249, 250, 176);
+}
+section#form form{
+  background-color: rgba(105, 105, 105, 0.2);
+  border-radius:10px;
+}
+section#form form strong{
+ color:rgb(224, 26, 26);
+}
+section#form .my-input{
+  border:none;
+  border-bottom:rgba(246, 247, 203, 0.445) solid 1px;
+  color:rgb(182,182,182);
+  height:40px;
+  background-color: rgba(131, 131, 131, 0.055);
+  text-align: center;
+}
+::placeholder {
+  color: rgb(182, 182, 182);
+}
+section#form form .my-btn{
+  background-color: rgb(206, 91, 56);  
+  border-radius:10px;
+  color:rgb(245, 243, 243);
+}
+select option{
+  background-color: rgb(21, 35, 49);
+}
+section#form form .req:after{
+  content:'*';
+  font-size: 1.5rem;
+  color:rgb(224, 26, 26);
+}
