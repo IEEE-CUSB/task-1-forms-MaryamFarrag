@@ -52,6 +52,7 @@ section#form form .req:after{
 .workshop{
   margin: 0 auto;
   position: relative;
+  width:30%;
   border: rgba(255,255,255,.1) solid 1px;
   margin-bottom: 5px;
   padding-bottom: 5px;
@@ -61,19 +62,23 @@ section#form form .req:after{
     background-color: #e87822;
     color: #fff;
     padding: 5px 5px;
-    border-radius: 6px;   
+    font-size:14px;  
     position: absolute;
-    left:-120px;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
     z-index: 1;  
 }
+.workshop:hover {
+  transform: rotateY(180deg);
+}
 .workshop:hover span.tooltip-text {
+  transform: rotateY(180deg);
   opacity: 1;
 }
-.workshop:hover img{
-  transform: scale(.9);
-}
- .check{
-  opacity: .5;
+ .check{  
+   background-color: #af5e20!important;
 }
  .hidden{
   display:none;
@@ -81,4 +86,24 @@ section#form form .req:after{
 .pref img{
   width: 170px;
   height:180px;
+}
+@media(max-width:900px) and (min-width:601px){
+  .workshop{
+    width:50%;
+  }
+  .workshop span{
+    padding-top:50px;
+    width:110%;
+    left:-5%;
+  }
+}
+@media(max-width:600px){
+  .workshop{
+    width:100%;
+  }
+  .workshop span{
+    padding-top:50px;
+    width:180%;
+    left:-40%;
+  }
 }
