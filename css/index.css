@@ -1,7 +1,15 @@
+*{
+  transition: all .5s;
+}
 section#form{
-  background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.4)),url("../images/bg.jpg");
+ /* background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.4)),url("../images/bg.jpg"); */
+ background-color:rgb(2, 62, 110);
   background-size: 100% 100%;
   color:rgb(238, 238, 238);
+}
+section#form header img{
+  width: 50px;
+  height:60px;
 }
 section#form hr{
   background-color:rgb(249, 250, 176);
@@ -36,4 +44,41 @@ section#form form .req:after{
   content:'*';
   font-size: 1.5rem;
   color:rgb(224, 26, 26);
+}
+.pref{
+  display: flex;
+  flex-wrap: wrap;
+}
+.workshop{
+  margin: 0 auto;
+  position: relative;
+  border: rgba(255,255,255,.1) solid 1px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.workshop span{
+    opacity: 0;
+    background-color: #e87822;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 6px;   
+    position: absolute;
+    left:-120px;
+    z-index: 1;  
+}
+.workshop:hover span.tooltip-text {
+  opacity: 1;
+}
+.workshop:hover img{
+  transform: scale(.9);
+}
+ .check{
+  opacity: .5;
+}
+ .hidden{
+  display:none;
+}
+.pref img{
+  width: 170px;
+  height:180px;
 }
